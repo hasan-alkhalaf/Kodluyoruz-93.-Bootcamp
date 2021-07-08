@@ -1,0 +1,45 @@
+.about-us{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	margin-top: 88px;
+	margin-bottom: 88px;
+
+   .about-us__svg{
+       height:40px;
+       width:40px;
+       margin-top:15px;
+   }
+  .about-us__title{
+    margin-left:25px;
+    h4{
+        margin:16px 0px auto;
+        font-size:12px;
+    }
+    span{
+        font-size:10px;
+        text-align: center;
+        color:grey;
+    }
+		@media screen and (max-width: 540px) {
+			width: 150px;
+		}
+
+  }
+   .about-us__item{
+       display: flex;
+			 align-items: center;
+			 margin: 0 20px;
+			 @media screen and (max-width: 461px) {
+				width: 260px;
+				justify-content: center;
+			}
+	
+    
+			
+   }
+	 @media screen and (max-width: 535px) {
+		justify-content: center;
+	}
+
+}

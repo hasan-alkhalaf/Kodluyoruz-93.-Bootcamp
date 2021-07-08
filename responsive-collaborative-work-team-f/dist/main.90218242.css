@@ -1,0 +1,210 @@
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    width: 95vw;
+  }
+}
+.title {
+  text-align: center;
+  font-size: bold;
+  font-size: 30px;
+}
+
+.products {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products .products_item {
+  margin: 0 10px;
+  position: relative;
+}
+.products .products_item .overlay {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #3a3a3a;
+  transition: opacity 0.5s ease;
+}
+.products .products_item .overlay:hover {
+  opacity: 0.7;
+}
+.products .products_item .overlay .overlay-items {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products .products_item .overlay .overlay-items button {
+  padding: 10px 50px;
+  border: 1px solid #e89f71;
+  color: #e89f71;
+  background-color: #fff;
+  font-weight: 600;
+}
+.products .products_item .overlay .overlay-items .overlay-share {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.products .products_item .overlay .overlay-items .overlay-share .ico {
+  margin: 15px 30px;
+}
+.products .products_item .product_img {
+  width: 285px;
+  height: 300px;
+}
+.products .products_item .products_discount {
+  background-color: #2ec1ac;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: center;
+}
+.products .products_item .products_discount h4 {
+  text-align: center;
+  margin-top: 15px;
+}
+.products .products_item .products_description {
+  background-color: #f4f5f7;
+  width: 285px;
+  height: 145px;
+}
+.products .products_item .products_description .product_name,
+.products .products_item .products_description .product_price {
+  margin: 0px;
+  color: #3a3a3a;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.products .products_item .products_description .product_description {
+  margin-left: 10px;
+}
+@media screen and (max-width: 1240px) {
+  .products .products_item {
+    margin-top: 20px;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.products-button {
+  border: 1px solid #e89f71;
+  background-color: #fff;
+  font-weight: 600;
+  height: 40px;
+  width: 300px;
+  margin: 25px auto;
+  color: #e89f71;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+.about-us .about-us__svg {
+  height: 40px;
+  width: 40px;
+  margin-top: 15px;
+}
+.about-us .about-us__title {
+  margin-left: 25px;
+}
+.about-us .about-us__title h4 {
+  margin: 16px 0px auto;
+  font-size: 12px;
+}
+.about-us .about-us__title span {
+  font-size: 10px;
+  text-align: center;
+  color: grey;
+}
+@media screen and (max-width: 540px) {
+  .about-us .about-us__title {
+    width: 150px;
+  }
+}
+.about-us .about-us__item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+@media screen and (max-width: 461px) {
+  .about-us .about-us__item {
+    width: 260px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  .about-us {
+    justify-content: center;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/Gilroy-Bold.bd3f527f.otf");
+}
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("/Gilroy-Semibold.31eae041.otf");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/Gilroy-Medium.cd13f225.otf");
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/Gilroy-Regular.1cdb59a2.otf");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/Gilroy-Light.91209a1b.otf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=/main.90218242.css.map */
